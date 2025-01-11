@@ -1,0 +1,8 @@
+#tkinter #if needed, most python versions have it
+requests>=2.31.0
+typing-extensions>=4.5.0
+asyncio>=3.4.3
+customtkinter>=5.2.0
+pillow>=10.0.0  # Required for customtkinter
+tiktoken>=0.5.0
+pyinstaller>=5.11.0
