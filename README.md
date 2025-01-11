@@ -3,7 +3,7 @@
 This project began in 2024 as a private app for BitForge Dynamics, designed for testing Ollama models in our R&D workflows. As we refined our internal systems and transitioned to a new architecture in 2025, we saw an opportunity to share this earlier version with the community. Rather than letting it fade into obsolescence, we decided to release it as a free, open-source educational tool for students and hobbyists interested in private AI development. This guide provides a hands-on introduction to building a modern, dark-themed chat interface for Ollama using Python and CustomTkinter—because the future of AI starts with sharing knowledge and tools.
 
 
-<img width="988" alt="Screenshot 2025-01-11 at 2 30 31 PM" src="https://github.com/user-attachments/assets/7570b208-2c35-4e4e-af5c-b07520e418af" />
+<img width="988" alt="Dark Engine GUI - Example" src="https://github.com/user-attachments/assets/f23d74a0-27bf-41ea-a32e-faf440527b11" />
 
 
 Read our [Blog](https://www.bitforgedynamics.com/blog) to create Dark Engine GUI with a step-by-step guide!
@@ -76,24 +76,23 @@ python main.py
 
 - Once you build the app or create a virtual environment, you should be greeted by the Welcome Window, make sure to have ollama downloaded. Models can be downloaded from the Welcome Window
 
-<img width="836" alt="DEGUI- Welcome Window" src="https://github.com/user-attachments/assets/f6a595a2-df53-4ea4-b603-077b2b1cba0e" />
+<img width="836" alt="DEGUI- Welcome Window" src="https://github.com/user-attachments/assets/bf028479-b1c9-43ba-85fb-c47b521f443b" />
 
 - Create New Chats in the Quick Chats main-folder OR create a folder to store specific chats
 
-<img width="991" alt="DEGUI - Chat Window" src="https://github.com/user-attachments/assets/02fada9a-68c2-4cbf-acb3-f0f18377b31e" />
-
+<img width="991" alt="DEGUI - Chat Window" src="https://github.com/user-attachments/assets/7de3574b-10ea-437b-a1b7-72f75529cf18" />
 
 - While the sidebar menu is open, click on the settings gear to change appearance, model, and create agents
 
-<img width="987" alt="DEGUI - Color Change" src="https://github.com/user-attachments/assets/05fbabc6-4402-470f-bce3-1fdd702ac868" />
+<img width="987" alt="DEGUI - Color Change" src="https://github.com/user-attachments/assets/e3d4a588-ecbc-4af9-9bcc-a3c041bbdf23" />
 
 - Change the font or font-size in the chat from the appearance tab
 
-<img width="992" alt="DEGUI - Font Change" src="https://github.com/user-attachments/assets/c80d2e40-55eb-4721-bdca-d148f84ee198" />
+<img width="992" alt="DEGUI - Font Change" src="https://github.com/user-attachments/assets/a6ec7515-ceae-4b4d-83c1-c8855762ab4f" />
 
 - Create an agent with a prompt template or customize the system prompt
 
-<img width="992" alt="DEGUI - Agent Creator" src="https://github.com/user-attachments/assets/7826a4f0-c03d-4c66-bb1d-65da4d84e774" />
+<img width="992" alt="DEGUI - Agent Creator" src="https://github.com/user-attachments/assets/7bdf2472-f54d-4de1-ba9d-0e8dc5f228ba" />
 
 ## License
 
@@ -106,5 +105,5 @@ python main.py
 - [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) for the modern UI components
 
 ## Authors:
-- [BitForge Dynamics](https://www.bitforgedynamics.com) | Brock Daily
+- [BitForge Dynamics](https://www.bitforgedynamics.com) | Brock Daily & Daniel Rubinov
 
