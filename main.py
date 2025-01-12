@@ -1,6 +1,5 @@
 # main.py
 
-import tkinter as tk
 import os
 import sys
 from src.gui import ModernChatApp
