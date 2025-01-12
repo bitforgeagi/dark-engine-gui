@@ -78,9 +78,6 @@ def build_app():
     if not icon_path.exists():
         print(f"Icon not found at: {icon_path.resolve()}")
         sys.exit(1)
-    print("Build script is at:", Path(__file__).resolve())
-    print("Current working directory is:", Path.cwd().resolve())
-    print("Icon path is:", icon_path.resolve())
     
     subprocess.run([
         sys.executable, 
