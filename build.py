@@ -4,6 +4,7 @@ import sys
 import subprocess
 from datetime import datetime
 import fnmatch
+from pathlib import Path
 
 def clean_builds():
     """Remove old build artifacts and cached apps"""
@@ -66,19 +67,34 @@ def build_app():
     """Build the application"""
     print("Building application...")
     if sys.platform == 'win32':
-        spec_file = 'windows.spec'
+        spec_file = 'main.py'
     elif sys.platform == 'darwin':
         spec_file = 'macos.spec'
     else:
         spec_file = 'linux.spec'
+
+    icon_path = Path(__file__).parent / 'src' / 'assets' / 'Logo.ico'
+    # Verify the icon path exists
+    if not icon_path.exists():
+        print(f"Icon not found at: {icon_path.resolve()}")
+        sys.exit(1)
+    print("Build script is at:", Path(__file__).resolve())
+    print("Current working directory is:", Path.cwd().resolve())
+    print("Icon path is:", icon_path.resolve())
     
     subprocess.run([
         sys.executable, 
         '-m', 
         'PyInstaller',
+        "-n DarkEngine",
+        "--onefile",
+        '--windowed',            # or --noconsole
+        f'--add-data=src/assets/Logo.png;src/assets',
+        f'--add-data=src/assets/Logo.ico;src/assets',
+        f'--icon={icon_path}',
         spec_file,
         '--noconfirm'
-    ])
+    ], check=True)
     
     # For Linux, create AppImage
     if sys.platform == 'linux':
